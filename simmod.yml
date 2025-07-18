@@ -4,4 +4,4 @@ mod_parameters:
     fraction_deamination : 0.1
     fraction_degradation : 0.3
 Sample_population:
-    pop_1: [[0,25],[27,15],[42,10]]
+    pop_1: [[0,10],[10,10]] # generation, number of samples
