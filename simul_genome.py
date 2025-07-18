@@ -57,7 +57,7 @@ outfile_name = options.outfile_name
 print(config)
 
 segment_length = config['General_parameters']['L']
-segment_number = config['Simul_parameters']['nb_seg']
+segment_number = config['General_parameters']['nb_seg']
 
 # time windows
 number_windows = config['Time_windows']['nb_times']
