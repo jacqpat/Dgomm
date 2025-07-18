@@ -10,7 +10,7 @@ WIP.
 Python 3 pipeline
 Required modules:
 - random (standard library)
-- argparse (standard library)
+- optparse (standard library)
 ## The Pipeline
 ### (Optional 1) Set base demographic parameters
 ### (Optional 2) Generate VCF with MSprime
