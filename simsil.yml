@@ -1,14 +1,10 @@
 ---
 General_parameters:
-    L: 50000000
-    mac: 1
-    mac_ld: 1
+    L: 50000000 # length of sequences to simulate
+    nb_seg: 1   # number of sequences to simulate 
 Time_windows:
     nb_times: 21
     t_max: 130000
     a: 0.06
-Simul_parameters:
-    nb_rep: 2500
-    nb_seg: 1
 Sample_population:
-    pop_1: [[0,25],[27,15],[42,10]]
+    pop_1: [[0,10],[10,10]] # generation, number of sample from this generation
