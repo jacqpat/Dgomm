@@ -41,3 +41,8 @@ output parameter ("-o") is for naming the VCF output and is optional but recomme
 ### 1) Set degradation and filtration parameters
 ### 2) Degrade VCF
 ### 3) Filter degraded VCF
+
+# TO DO:
+- To avoid unpredictable issues, it is STRONGLY adviced to run simul_genome.py for a single sequence, and not multiple ones. For now the VCF output is for only the coalescence tree of the first sequence given, which could lead to results different from the expected if you planned to have one VCF for X sequences of Y length. There might be a way to make one coalescence tree from all those smaller ones, but it has not been implemented yet.
+- MSprime' VCF output consider that all SNPs are on the same chromosome. It would be wise to give the user the option to add to the YAML how many chromosomes he want, their sizes, and to add this information to the VCF. Although if it was simply renaming the CHROM entries in the final VCF, it might cause issues with LD calculations later on as we'd "artificially" separated sites that are actually linked. Solution might come with the resolution of the above "only one sequence simulated" issue.
+- If, and when, different chromosomes/sequences are implemented, it might be useful to add an option to give each sequence its own mutation and recombination rates, unless it would be adding too much clutter (also check the litterature to see if it makes biological sense).
